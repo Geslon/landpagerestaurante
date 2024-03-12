@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="styles/styles.css"/>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Landing page</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <i class="fa-solid fa-utensils" id="nav_logo"> Bienvenido</i>
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+        <button class="btn-default">Reservas</button>
+        <button id="mobile_btn"><i class="fa-solid fa-bars"></i></button>
+      </nav>
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+        <button class="btn-default">Peça aqui</button>
+      </div>
+    </header>
+    <main id="content">
+      <section id="home">
+        <div class="shape"></div>
+        <div id="cta">
+          <h1 class="title">Aqui você encontra sabor de <span>verdade.</span>.<span>.</span></h1>
+          <p class="description">
+            Planejando um jantarzinho romântico com o seu amor?<br>Venha conhecer a nossa gastronomia.<br>Bienvenido, o lugar ideal, com um cardápio especial. Tudo o que você precisa para ter uma noite apaixonante.<br>Veja nossos pratos agora mesmo!
+          </p>
+          <div id="cta_buttons">
+            <a href="#menu" class="btn-default">Ver cardápio</a>
+            <a href="tel:+5522997081268" id="phone_button">
+              <button class="btn-default">
+                <i class="fa-solid fa-phone"></i>
+              </button>
+              (22) 99708-1268
+            </a>
+          </div>
+          <div class="social-media-buttons">
+            <a href="tel:+5522997081268">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/geslon/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/geslon.schottz" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+        <div id="banner">
+          <img src="src/images/hero.png" alt="" />
+        </div>
+      </section>
+
+      <section id="menu">
+        <h2 class="section-title">Cardápio</h2>
+        <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+        <div id="dishes">
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/images/dish.png" class="dish-image" alt="" />
+            <h3 class="dish-title">Prato Japonês</h3>
+            <span class="dish-description">
+              Delicioso prato japonês com frutos do mar e arroz.
+            </span>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$25,00</h4>
+              <a href="https://wa.me/5522997081268?text=Você%20está%20solicitando%20do%20o%20prato%20x%20 no%20valor%20de%20R$20,00%20,%20vamos%20começar%20a%20preparar%20seu%20prato%20.%20
+              Por%20favor%20nos%20informe%20o%20endereço%20para%20entrega!%20
+              Muito%20Obrigado%20pela%20preferência%20.%20" target="_blank">
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+              </a>
+          </div>
+        </div>
+        <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/images/dish2.png" class="dish-image" alt="" />
+            <h3 class="dish-title">Misto Gourmet</h3>
+            <span class="dish-description">
+              Misto com pão tipo italiano, carne, queijo e salada.
+            </span>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$20,00</h4>
+              <a href="https://wa.me/5522997081268?text=Você%20está%20solicitando%20do%20o%20prato%20x%20 no%20valor%20de%20R$20,00%20,%20vamos%20começar%20a%20preparar%20seu%20prato%20.%20
+              Por%20favor%20nos%20informe%20o%20endereço%20para%20entrega!%20
+              Muito%20Obrigado%20pela%20preferência%20.%20" target="_blank">
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+              </a>
+          </div>
+        </div>
+        <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/images/dish3.png" class="dish-image" alt="" />
+            <h3 class="dish-title">Salada com Frutas</h3>
+            <span class="dish-description">
+              Deliciosa salada do chef com frutas especias e selecionadas.
+            </span>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$25,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+          </div>
+        </div>
+
+        <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/images/dish4.png" class="dish-image" alt="" />
+            <h3 class="dish-title">Yakissoba</h3>
+            <span class="dish-description">
+              Especialidade do chef, um delicioso Yakissoba com frutos do mar.
+            </span>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$20,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <img src="src/images/chef.png" id="testimonial_chef" alt="">
+        <div id="testimonials_content">
+            <h2 class="section-title">Depoimentos</h2>
+            <h3 class="section-subtitle">O que os clientes falam sobre nós:</h3>
+            
+            <div id="feedbacks">
+                <div class="feedback">
+                    <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+                    <div class="feedback-content">
+                        <p class="feed-name">
+                            Fulana de Silva
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            "Os pratos do Bienvenido são maravilhosos, o atendimento é excelente e o ambiente é muito agradável. Recomendo a todos!"
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+                    <div class="feedback-content">
+                        <p class="feed-name">
+                            Cicrana de Souza
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            "Uma delicia, os pratos são muito bem preparados e o atendimento é excelente. Recomendo a todos!"
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="btn-default">
+                Ver mais avaliações
+            </button>
+            
+        </div>
+      </section>
+    </main>
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy; 2024 Geslon Schottz
+            </span>
+            <div class="social-media-buttons">
+                <a href="">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </div>
+        </div>
+    </footer>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>
